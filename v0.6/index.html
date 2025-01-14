@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta name='Author' content='Tyler Normile'/>
+    <meta name='Description' content='Javascript Alarm Clock Tyler Normile Tyler_N' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Alarm Clock &amp; Timer</title>
+    <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' />
+    <link href="css/clockpicker.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet"> 
+  </head>
+  <body id="home">
+    <div id="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-body text-center">
+              <div id="date">
+                <h3></h3>
+              </div>
+              <div id="real-time-clock">
+                <h1></h1>
+                <div id="alarm-tm" class="hdn"><p>No Alarm set</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="container">
+        <div class="row">
+          <div class="jumbotron text-center">
+            <button type="button" id="btn-reset" class="btn btn-danger btn-xs hdn">Reset</button>
+            <div id="control">
+              <div id="btn-control">
+                <button type="button" id="btn-alarm" class="btn btn-primary" style="margin-right:50px;">Alarm</button>
+                <button type="button" id="btn-timer" class="btn btn-primary">Timer</button>
+              </div>
+            </div>
+            <div id="status"><span><p class="hdn">status</p></span></div>
+            <audio id="alm-snd">
+              <source src="alarm_beep.mp3" type="audio/mpeg">
+            </audio>
+            <div id="popup" class="modal-box">  
+              <header>
+                <a href="#" class="modal-close close">×</a>
+                <h3>ALARM</h3>
+              </header>
+              <div class="modal-body">
+                <button type="button" class="modal-close">OFF</button>
+                <button type="button" class="modal-snz">Snooze 5min.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="push"></div>
+    </div>
+    <div id="footer">
+      <div class="container text-center">
+        <p class="muted credit">Javascript Alarm Clock</p>
+      </div>
+    </div>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/clockpicker.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

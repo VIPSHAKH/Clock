@@ -1,0 +1,218 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html, body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+.clockpicker {
+  width:150px;
+  margin: 0 auto;
+  -webkit-animation-duration: 1.5s;
+}
+
+.am-button {
+  color: #000;
+}
+
+.pm-button {
+  color: #000;
+}
+
+.clockpicker-button {
+  color:#000;
+}
+.hdn {
+  visibility: hidden;
+}
+
+.tmr-head {
+  float: left;
+  width: 100%; 
+  margin-left: 27%;
+}
+
+.tmr-head p{
+  float: left;
+  padding-left: 46px;
+  margin-bottom: 5px;
+}
+
+.tmr-sel {
+  margin-left: 20px;
+}
+
+.form-inline {
+  padding-right: 15px;
+}
+
+.opa {
+  opacity: 0;
+}
+
+.alarm-tm {
+
+}
+
+.panel {
+  margin-bottom:10px;
+}
+
+.panel-body {
+  padding-bottom:5px;
+}
+
+/* No select */
+.ns {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+  -o-user-select:none;
+  user-select: none;
+  outline: none;
+}
+
+.tmr {
+
+}
+
+
+#status {
+  -webkit-animation-duration: 1.5s;
+}
+
+#alarm-tm {
+  -webkit-animation-duration: 1.5s; 
+}
+
+#alarm-tm p {
+  color: #5cb85c;
+  font-weight: bold;
+}
+
+#btn-reset {
+  margin-bottom: 20px;
+  -webkit-animation-duration: 1.5s;
+}
+
+#wrap {
+  -webkit-animation-duration: 1.5s;
+}
+
+#status p {
+  color: #5cb85c;
+  font-size: 11pt;
+}
+
+#status.fadeout{
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+}
+
+
+
+
+
+.modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 98%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+ 
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1.25em 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+ 
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 { margin: 0; }
+ 
+.modal-box .modal-body { padding: 2em 1.5em; }
+ 
+.modal-box footer,
+.modal-box .modal-footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+}
+ 
+.modal-overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+ 
+a.close {
+  line-height: 1;
+  font-size: 1.5em;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+}
+ 
+a.close:hover {
+  color: #222;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+@media (min-width: 32em) {
+  .modal-box { width: 35%; }
+}
